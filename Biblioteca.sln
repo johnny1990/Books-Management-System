@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Administrare_carti_biblioteca_personala", ".", "{BFAFF2B3-0727-47C0-BCE9-4C8311096D99}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_40352"
+		Debug.AspNetCompiler.PhysicalPath = "..\Administrare_carti_biblioteca_personala\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_40352\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_40352"
+		Release.AspNetCompiler.PhysicalPath = "..\Administrare_carti_biblioteca_personala\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_40352\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "40352"
+		SlnRelativePath = "..\Administrare_carti_biblioteca_personala\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFAFF2B3-0727-47C0-BCE9-4C8311096D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFAFF2B3-0727-47C0-BCE9-4C8311096D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC519ADD-F325-4F10-A1E1-EB9CB4634B99}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Biblioteca" Class="BibliotecaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=MAN;Initial Catalog=Biblioteca;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="conexiune" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bibliotecari" Member="Bibliotecaris">
+    <Type Name="Bibliotecari">
+      <Column Name="Nume_utilizator" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Parola" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Nume_complet" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Carti" Member="Cartis">
+    <Type Name="Carti">
+      <Column Name="Id_carte" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titlu" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Autori" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Subiect" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Editura" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Disponibilitate" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="Data_adaugare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Membri" Member="Membris">
+    <Type Name="Membri">
+      <Column Name="Id_membru" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nume_membru" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adresa_membru" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Data_inregistrare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Returnari" Member="Returnaris">
+    <Type Name="Returnari">
+      <Column Name="Id_carte" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id_membru" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data_rezervare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Data_returnare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bibliotecar_rezervare" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Bibliotecar_returnare" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rezervari" Member="Rezervaris">
+    <Type Name="Rezervari">
+      <Column Name="Id_carte" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_membru" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data_rezervare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bibliotecar" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

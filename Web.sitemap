@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Acasa"  description="">
+    <siteMapNode url="Rezervare.aspx" title="Rezerva carte"  description="" />
+    <siteMapNode url="Returnare.aspx" title="Returneaza carte"  description="" />
+    <siteMapNode url="Cautare carti.aspx" title="Cauta carti"  description="" />
+    <siteMapNode url="" title="Rapoarte"  description="">
+      <siteMapNode url="Raport rezervari.aspx" title="Raport rezervari"  description="" />
+      <siteMapNode url="Istoric carte.aspx" title="Istoric carte"  description="" />
+      <siteMapNode url="Istoric membri.aspx" title="Istoric membri"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
